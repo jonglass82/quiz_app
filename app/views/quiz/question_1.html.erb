@@ -1,0 +1,29 @@
+<!DOCTYPE HTML>
+<html>
+
+<body>
+    
+    <h1>Question 1</h1>
+    
+    <h2><%= @question1 %></h2>
+    
+    <%= form_with url: "question_1" do |form| %>
+
+
+<%= radio_button_tag(:answer, "2") %>
+<%= label_tag(:answer, "2") %>
+    
+    <%= radio_button_tag(:answer, "5") %>
+<%= label_tag(:answer, "5") %>
+
+    
+      <%= form.submit %>
+      <% end %>
+
+    
+
+</body>
+
+
+
+</html>
