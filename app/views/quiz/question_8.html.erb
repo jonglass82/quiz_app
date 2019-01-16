@@ -3,15 +3,14 @@
 
 <body>
     
-    <h1>Question 1</h1>
+    <h1>Question 8</h1>
     
     <%= form_with url: "question_check" do |form| %>
     
-    <h2><%= @first_question %></h2>
-    <h2><%= @question1 %></h2>
+    <h2><%= @question8 %></h2>
     
     <%= hidden_field_tag(:question, "what is 1+1?") %>
-     <%= hidden_field_tag(:id, "1") %>
+     <%= hidden_field_tag(:id, "8") %>
 
 
     <%= radio_button_tag(:answer, "2") %>

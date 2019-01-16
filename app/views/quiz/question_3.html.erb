@@ -5,10 +5,30 @@
     
     <h1>Question 3</h1>
     
-   
+    <%= form_with url: "question_check" do |form| %>
     
+    <h2><%= @question3 %></h2>
+    
+    <%= hidden_field_tag(:question, "what is 1+1?") %>
+     <%= hidden_field_tag(:id, "3") %>
+
+
+    <%= radio_button_tag(:answer, "2") %>
+    <%= label_tag(:answer, "2") %><br>
+    
+    <%= radio_button_tag(:answer, "5") %>
+    <%= label_tag(:answer, "5") %><br>
+    
+    <%= radio_button_tag(:answer, "24") %>
+    <%= label_tag(:answer, "2") %><br>
+    
+    <%= radio_button_tag(:answer, "1") %>
+    <%= label_tag(:answer, "5") %><br>
+
+    
+      <%= form.submit %>
+      <% end %>
+
 </body>
-
-
 
 </html>
