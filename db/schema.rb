@@ -10,11 +10,12 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_02_28_050143) do
+ActiveRecord::Schema.define(version: 2019_02_28_204922) do
 
   create_table "quizzes", force: :cascade do |t|
     t.text "question"
     t.text "answers"
+    t.text "correct_answer"
   end
 
 end
