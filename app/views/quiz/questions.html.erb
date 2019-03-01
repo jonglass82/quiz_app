@@ -7,19 +7,12 @@
    <%= @question %>
     
     <%= form_with url: "question_check" do |form| %>
-    
-    <%= radio_button_tag(:answer, "2") %>
-    <%= label_tag(:answer, "2") %><br>
-    
-    <%= radio_button_tag(:answer, "5") %>
-    <%= label_tag(:answer, "5") %><br>
-    
-    <%= radio_button_tag(:answer, "24") %>
-    <%= label_tag(:answer, "2") %><br>
-    
-    <%= radio_button_tag(:answer, "1") %>
-    <%= label_tag(:answer, "5") %><br>
 
+    <% @answers.each do |a| %>
+
+<%= a.answer %>
+
+<% end %>
     
       <%= form.submit %>
       <% end %>

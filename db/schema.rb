@@ -10,12 +10,18 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_02_28_204922) do
+ActiveRecord::Schema.define(version: 2019_03_01_154528) do
+
+  create_table "answers", force: :cascade do |t|
+    t.string "answer"
+    t.integer "quiz_id"
+    t.boolean "correct"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "quizzes", force: :cascade do |t|
     t.text "question"
-    t.text "answers"
-    t.text "correct_answer"
   end
 
 end

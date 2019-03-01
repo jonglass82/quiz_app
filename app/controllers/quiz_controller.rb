@@ -3,9 +3,8 @@ class QuizController < ApplicationController
     @@index = 1
 
     
-     def start
+    def start
         $score = 0
-
     end
 
 
@@ -16,9 +15,9 @@ class QuizController < ApplicationController
     
     def question_check
 
-        @@index += 1
+        @answers = Quiz.find_by_id(@@index).answers
 
-        puts @@index
+        @@index += 1
 
         redirect_to "/questions"
    
