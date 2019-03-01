@@ -10,9 +10,15 @@
 
     <% @answers.each do |a| %>
 
-<%= a.answer %>
+      <%= radio_button_tag(:selected, a.answer) %>
+      <%= label_tag(:selected, a.answer ) %> </br>
+      
 
-<% end %>
+    <% end %>
+
+
+
+
     
       <%= form.submit %>
       <% end %>
