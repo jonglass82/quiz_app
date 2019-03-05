@@ -23,8 +23,19 @@ class QuizController < ApplicationController
 
         @@index += 1
 
+        if @@index <= 10
+
         redirect_to "/questions"
+
+        else
+            redirect_to "/score"
+            @@index = 1
+        end
    
+    end
+
+    def score
+        @grade =  "%" + $score.to_s + "0"
     end
     
 end

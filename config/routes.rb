@@ -4,6 +4,7 @@ Rails.application.routes.draw do
     root 'quiz#start'    
     
     get '/questions', to: 'quiz#questions'
+    get '/score', to: 'quiz#score'
     
     post '/question_check', to: 'quiz#question_check'
     
