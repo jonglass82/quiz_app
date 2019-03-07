@@ -1,9 +1,11 @@
 class QuizController < ApplicationController
     
     @@index = 1
+    $question_number = 1
 
     def start
         $score = 0
+        $question_number = 1
     end
 
 
@@ -17,11 +19,19 @@ class QuizController < ApplicationController
 
         @selected = params["selected"]
 
-        if @selected == "true"
-            $score += 1
-        end
+        if @selected
+            if @selected == "true"
+             $score += 1
+             @@index += 1
+             $question_number += 1
+            else
+             @@index += 1
+             $question_number += 1
+            end
 
-        @@index += 1
+        else
+            flash[:notice] = "You must select an answer"
+        end
 
         if @@index <= 10
 

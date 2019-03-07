@@ -1,23 +1,43 @@
 <!DOCTYPE HTML>
 <html>
+<head>
+    <title>Lake Zurich Quiz</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+  <!--   <script src="https://code.jquery.com/jquery-2.1.4.js"></script> -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>  
+</head>
+
+
+<div id="error"><%= flash[:notice] %></div>
+
 
 <body>
-    
 
-   <%= @question %>
-    
-    <%= form_with url: "question_check" do |form| %>
+   <div class="container" id="quiz">
 
-    <% @answers.each do |a| %>
+   <div id="questions"><%= @question %></div>
 
-      <%= radio_button_tag(:selected, a.correct) %>
-      <%= label_tag(:selected, a.answer ) %> </br>
+   <div id="answers"
+
+        <%= form_with url: "question_check" do |form| %>
+   
+        <% @answers.each do |a| %>
+
+            <%= radio_button_tag(:selected, a.correct) %>
+            <%= label_tag(:selected, a.answer ) %> </br>
       
+        <% end %>
 
-    <% end %>
+    </div>
 
     <%= form.submit %>
       <% end %>
+
+ 
+  </div>
+
+   <div><%= $question_number %><span> of 10</span></div>
 
 </body>
 
