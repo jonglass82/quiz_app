@@ -45,7 +45,7 @@ class QuizController < ApplicationController
     end
 
     def score
-        @grade =  "%" + $score.to_s + "0"
+        @grade = ($score * 10).to_s + "%" 
     end
     
 end

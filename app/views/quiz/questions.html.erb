@@ -16,9 +16,9 @@
 
    <div class="container" id="quiz">
 
-   <div id="questions"><%= @question %></div>
+   <div id="questions"><b><%= @question %></b></div>
 
-   <div id="answers"
+   <div id="answers">
 
         <%= form_with url: "question_check" do |form| %>
    
@@ -29,15 +29,16 @@
       
         <% end %>
 
-    </div>
+   <div class="container" id="submit_button"> 
 
-    <%= form.submit %>
+    <%= form.submit "Submit answer" %>
       <% end %>
-
+    </div>
+</div>
  
   </div>
 
-   <div><%= $question_number %><span> of 10</span></div>
+   <div id="question_count"><%= $question_number %><span> of 10</span></div>
 
 </body>
 

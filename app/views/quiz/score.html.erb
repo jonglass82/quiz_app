@@ -1,7 +1,36 @@
-<h2>Your score is : </h1> <br> 
-<h1><%= @grade %></h1> 
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Lake Zurich Quiz</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>  
+</head>
 
-<h1>Thanks for Playing!</h1>
+<body class="score">
 
-<button><a href="/start">Retake Quiz</a></button>
+  <div class="container" id="results">
+
+    <h2>Your score is : </h1> <br> 
+    <h1><%= @grade %></h1> 
+
+    <h1>Thanks for Playing!</h1><br>
+
+        <div class="container">
+
+          <button><a href="/">Retake Quiz</a></button>
+
+        </div>
+
+  </div>
+
+
+</body>
+
+</html>
+
+
+
+
+
 

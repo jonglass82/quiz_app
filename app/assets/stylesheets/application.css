@@ -1,12 +1,17 @@
+.score{
+  background-color: #eddcf7;
+}
+
 #main{
-  background-color: #ccdfff;
+  background-color: #dbe8ff;
   text-align: center;
   padding: 10px;
 }
 
 #quiz{
   text-align: center;
-  background-color: lightblue;
+  background-color: #dbe8ff;
+  padding: 20px;
 }
 
 #questions{
@@ -15,9 +20,25 @@
 
 #answers{
   text-align: left;
+  padding: 50px;
+  font-size: 18pt;
 }
 
 #error{
   color: red;
   font-size: 14pt;
+}
+
+#question_count{
+  text-align: center;
+  font-size: 14pt;
+}
+
+#submit_button{
+  padding: 20pt;
+}
+
+#results{
+  text-align: center;
+  background-color: beige;
 }

@@ -1,24 +1,18 @@
-# README
+This is a simple 10 question quiz built with Rails. 
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+To get started: 
 
-Things you may want to cover:
+1. Clone the repo to your machine locally.
 
-* Ruby version
+2. Review the seeds.rb file and input your own questions and answers. 
 
-* System dependencies
+3. Then run:
 
-* Configuration
+'''
+rake db:seed 
 
-* Database creation
+'''
 
-* Database initialization
 
-* How to run the test suite
 
-* Services (job queues, cache servers, search engines, etc.)
 
-* Deployment instructions
-
-* ...
