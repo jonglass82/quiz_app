@@ -1,22 +1,22 @@
-Quiz.create!("question": "What was the name of the hot dog stand in the parking lot of the Amoco gas station (rt 12 and Quentin)?")
+Quiz.create("question": "What was the name of the hot dog stand in the parking lot of the Amoco gas station (rt 12 and Quentin)?")
 
-Quiz.create!("question": "Where did the Barn dances take place?")
+Quiz.create("question": "Where did the Barn dances take place?")
 
-Quiz.create!("question": "What was the name of the bowling alley that used to be in the parking lot of Jewel?")
+Quiz.create("question": "What was the name of the bowling alley that used to be in the parking lot of Jewel?")
 
-Quiz.create!("question": "Name the location where after school fights were typically hosted:")
+Quiz.create("question": "Name the location where after school fights were typically hosted:")
 
-Quiz.create!("question": "Name the shoe store next to Record City:")
+Quiz.create("question": "Name the shoe store next to Record City:")
 
-Quiz.create!("question": "What was the name of the breakfast restaurant on main street?")
+Quiz.create("question": "What was the name of the breakfast restaurant on main street?")
 
-Quiz.create!("question": "What was the name of the apple orchard?")
+Quiz.create("question": "What was the name of the apple orchard?")
 
-Quiz.create!("question": "What was the business that was there before Schlotsky's deli?")
+Quiz.create("question": "What was the business that was there before Schlotsky's deli?")
 
-Quiz.create!("question": "Where can you rent boats in town?")
+Quiz.create("question": "Where can you rent boats in town?")
 
-Quiz.create!("question": "What was the superstore next to Walmart?")
+Quiz.create("question": "What was the superstore next to Walmart?")
 
 
 
