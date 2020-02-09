@@ -1,3 +1,8 @@
+body{
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
 .score{
   background-color: #eddcf7;
 }
@@ -12,6 +17,7 @@
   text-align: center;
   background-color: #dbe8ff;
   padding: 20px;
+  width: 80%;
 }
 
 #questions{
